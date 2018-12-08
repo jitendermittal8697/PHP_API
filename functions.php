@@ -58,10 +58,26 @@ function deleteObject($id){
 }
 
 function modifyObject($id,$property,$value){
-
-}
-
-function searchObject($id){
+    $str = file_get_contents('object.json');
+    $json = json_decode($str, true);
+    $i=0;
+    foreach($json as $ele){
+        if(!strcmp($ele['name'], $id)){
+            if(!isset($ele[$property]))
+            {
+                echo "Object Doesn't Have Any Property Field";
+                exit();
+            }    
+            else
+                $json[$i][$property] = $value;
+        }
+        $i++;       
+    }
+    //echo '<pre>'; print_r($json); echo '</pre>';
+        
+    $json = json_encode($json);
+    file_put_contents('object.json',$json);
+    echo "Modified File Successfully";
 
 }
 
