@@ -8,7 +8,7 @@
         "timepass": 3
     }
 }, {
-    "name": "Jitender Mittal",
+    "name": "Jitender",
     "enroll": "02676803115",
     "friends": ["Ayushi", "Jaspreet", "Sushant", "Vidhi"],
     "hobbies": {
@@ -16,4 +16,6 @@
         "masti": 2,
         "timepass": 3
     }
+}, {
+    "name": "Jitu"
 }]

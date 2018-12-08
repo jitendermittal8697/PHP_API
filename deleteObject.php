@@ -15,7 +15,12 @@
     }
     else
     {
-        $content = deleteObject($query['name']);
-        echo '<pre>'; print_r($content); echo '</pre>';
+        if(!checkDuplicacy($query['name']))
+            echo "Object Doesn't Exist !!!";
+        else
+        {
+            $content = deleteObject($query['name']);
+            echo '<pre>'; print_r($content); echo '</pre>';
+        }
     }
 ?> 

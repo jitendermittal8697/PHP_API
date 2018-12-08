@@ -46,7 +46,7 @@ function deleteObject($id){
         if(!strcmp($ele['name'],$id))
         {
             unset($json[$i]);
-            echo "Current Record Found";
+            //echo "Current Record Found";
         }
         $i++;
     }
@@ -65,4 +65,15 @@ function searchObject($id){
 
 }
 
+function checkDuplicacy($id){
+    $str = file_get_contents('object.json');
+    $json = json_decode($str, true);
+    $returnvalue = false;
+    foreach($json as $ele){
+        if(!strcmp($ele['name'], $id)){
+            $returnvalue = true;
+        } 
+    }
+    return $returnvalue;
+}
 ?>
