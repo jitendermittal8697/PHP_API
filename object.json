@@ -1,0 +1,19 @@
+[{
+    "name": "Jitender Mittal",
+    "enroll": "02676803115",
+    "friends": ["Ayushi", "Jaspreet", "Sushant", "Vidhi"],
+    "hobbies": {
+        "bakchodi": 1,
+        "masti": 2,
+        "timepass": 3
+    }
+}, {
+    "name": "Jitender Mittal",
+    "enroll": "02676803115",
+    "friends": ["Ayushi", "Jaspreet", "Sushant", "Vidhi"],
+    "hobbies": {
+        "bakchodi": 1,
+        "masti": 2,
+        "timepass": 3
+    }
+}]
